@@ -112,8 +112,8 @@ def validate_year(year_str: str) -> Optional[int]:
 
 
 def format_score(score: str) -> str:
-    # Replace hyphens with en-dashes for proper formatting
-    return score.replace('-', '–')
+    # Normalize all dash characters to regular hyphens for better JSON readability
+    return score.replace('–', '-').replace('—', '-').replace('â€"', '-')
 
 @app.route('/health', methods=['GET'])
 def health_check():
