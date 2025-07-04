@@ -2,12 +2,17 @@
 
 A REST API that provides information about Wimbledon finals by year.
 
+## 🚀 Live API
+
+**Deployed on Render.com:** [Your API is now live!]
+
 ## Features
 
-- Get Wimbledon final information for any year
+- Get Wimbledon final information for any year (1877-2024)
 - Production-ready with proper error handling
 - Health check endpoint
 - CORS enabled
+- Automatic data extraction from Wikipedia
 - CSV data loading
 
 ## API Endpoints
