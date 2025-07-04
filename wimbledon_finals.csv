@@ -1,0 +1,138 @@
+year,champion,runner_up,score,sets,tiebreak
+1877,Spencer Gore,William Marshall,"6-1, 6-2, 6-4",3,0
+1878,Frank Hadow,Spencer Gore,"7-5, 6-1, 9-7",3,0
+1879,John Hartley,Vere St. Leger Goold,"6-2, 6-4, 6-2",3,0
+1880,John Hartley,Herbert Lawford,"6-3, 6-2, 2-6, 6-3",4,0
+1881,William Renshaw,John Hartley,"6-0, 6-1, 6-1",3,0
+1882,William Renshaw,Ernest Renshaw,"6-1, 2-6, 4-6, 6-2, 6-2",5,0
+1883,William Renshaw,Ernest Renshaw,"2-6, 6-3, 6-3, 4-6, 6-3",5,0
+1884,William Renshaw,Herbert Lawford,"6-0, 6-4, 9-7",3,0
+1885,William Renshaw,Herbert Lawford,"7-5, 6-2, 4-6, 7-5",4,0
+1886,William Renshaw,Herbert Lawford,"6-0, 5-7, 6-3, 6-4",4,0
+1887,Herbert Lawford,Ernest Renshaw,"1-6, 6-3, 3-6, 6-4, 6-4",5,0
+1888,Ernest Renshaw,Herbert Lawford,"6-3, 7-5, 6-0",3,0
+1889,William Renshaw,Ernest Renshaw,"6-4, 6-1, 3-6, 6-0",4,0
+1890,Willoughby Hamilton,William Renshaw,"6-8, 6-2, 3-6, 6-1, 6-1",5,0
+1891,Wilfred Baddeley,Joshua Pim,"6-4, 1-6, 7-5, 6-0",4,0
+1892,Wilfred Baddeley,Joshua Pim,"4-6, 6-3, 6-3, 6-2",4,0
+1893,Joshua Pim,Wilfred Baddeley,"3-6, 6-1, 6-3, 6-2",4,0
+1894,Joshua Pim,Wilfred Baddeley,"10-8, 6-2, 8-6",3,0
+1895,Wilfred Baddeley,Wilberforce Eaves,"4-6, 2-6, 8-6, 6-2, 6-3",5,0
+1896,Harold Mahony,Wilfred Baddeley,"6-2, 6-8, 5-7, 8-6, 6-3",5,0
+1897,Reginald Doherty,Harold Mahony,"6-4, 6-4, 6-3",3,0
+1898,Reginald Doherty,Laurence Doherty,"6-3, 6-3, 2-6, 5-7, 6-1",5,0
+1899,Reginald Doherty,Arthur Gore,"1-6, 4-6, 6-3, 6-3, 6-3",5,0
+1900,Reginald Doherty,Sydney Smith,"6-8, 6-3, 6-1, 6-2",4,0
+1901,Arthur Gore,Reginald Doherty,"4-6, 7-5, 6-4, 6-4",4,0
+1902,Laurence Doherty,Arthur Gore,"6-4, 6-3, 3-6, 6-0",4,0
+1903,Laurence Doherty,Frank Riseley,"7-5, 6-3, 6-0",3,0
+1904,Laurence Doherty,Frank Riseley,"6-1, 7-5, 8-6",3,0
+1905,Laurence Doherty,Norman Brookes,"8-6, 6-2, 6-4",3,0
+1906,Laurence Doherty,Frank Riseley,"6-4, 4-6, 6-2, 6-3",4,0
+1907,Norman Brookes,Arthur Gore,"6-4, 6-2, 6-2",3,0
+1908,Arthur Gore,Herbert Roper Barrett,"6-3, 6-2, 4-6, 3-6, 6-4",5,0
+1909,Arthur Gore,Major Ritchie,"6-8, 1-6, 6-2, 6-2, 6-2",5,0
+1910,Anthony Wilding,Arthur Gore,"6-4, 7-5, 4-6, 6-2",4,0
+1911,Anthony Wilding,Herbert Roper Barrett,"6-4, 4-6, 2-6, 6-2, retired[e]",4,0
+1912,Anthony Wilding,Arthur Gore,"6-4, 6-4, 4-6, 6-4",4,0
+1913,Anthony Wilding,Maurice McLoughlin,"8-6, 6-3, 10-8",3,0
+1914,Norman Brookes,Anthony Wilding,"6-4, 6-4, 7-5",3,0
+1919,Gerald Patterson,Norman Brookes,"6-3, 7-5, 6-2",3,0
+1920,Bill Tilden,Gerald Patterson,"2-6, 6-3, 6-2, 6-4",4,0
+1921,Bill Tilden,Brian Norton,"4-6, 2-6, 6-1, 6-0, 7-5",5,0
+1922,Gerald Patterson,Randolph Lycett,"6-3, 6-4, 6-2",3,0
+1923,Bill Johnston,Francis Hunter,"6-0, 6-3, 6-1",3,0
+1924,Jean Borotra,René Lacoste,"6-1, 3-6, 6-1, 3-6, 6-4",5,0
+1925,René Lacoste,Jean Borotra,"6-3, 6-3, 4-6, 8-6",4,0
+1926,Jean Borotra,Howard Kinsey,"8-6, 6-1, 6-3",3,0
+1927,Henri Cochet,Jean Borotra,"4-6, 4-6, 6-3, 6-4, 7-5",5,0
+1928,René Lacoste,Henri Cochet,"6-1, 4-6, 6-4, 6-2",4,0
+1929,Henri Cochet,Jean Borotra,"6-4, 6-3, 6-4",3,0
+1930,Bill Tilden,Wilmer Allison,"6-3, 9-7, 6-4",3,0
+1931,Sidney Wood,Frank Shields,Walkover[g],1,0
+1932,Ellsworth Vines,Bunny Austin,"6-4, 6-2, 6-0",3,0
+1933,Jack Crawford,Ellsworth Vines,"4-6, 11-9, 6-2, 2-6, 6-4",5,0
+1934,Fred Perry,Jack Crawford,"6-3, 6-0, 7-5",3,0
+1935,Fred Perry,Gottfried von Cramm,"6-2, 6-4, 6-4",3,0
+1936,Fred Perry,Gottfried von Cramm,"6-1, 6-1, 6-0",3,0
+1937,Don Budge,Gottfried von Cramm,"6-3, 6-4, 6-2",3,0
+1938,Don Budge,Bunny Austin,"6-1, 6-0, 6-3",3,0
+1939,Bobby Riggs,Elwood Cooke,"2-6, 8-6, 3-6, 6-3, 6-2",5,0
+1946,Yvon Petra,Geoff Brown,"6-2, 6-4, 7-9, 5-7, 6-4",5,0
+1947,Jack Kramer,Tom Brown,"6-1, 6-3, 6-2",3,0
+1948,Bob Falkenburg,John Bromwich,"7-5, 0-6, 6-2, 3-6, 7-5",5,0
+1949,Ted Schroeder,Jaroslav Drobný,"3-6, 6-0, 6-3, 4-6, 6-4",5,0
+1950,Budge Patty,Frank Sedgman,"6-1, 8-10, 6-2, 6-3",4,0
+1951,Dick Savitt,Ken McGregor,"6-4, 6-4, 6-4",3,0
+1952,Frank Sedgman,Jaroslav Drobný,"4-6, 6-2, 6-3, 6-2",4,0
+1953,Vic Seixas,Kurt Nielsen,"9-7, 6-3, 6-4",3,0
+1954,Jaroslav Drobný,Ken Rosewall,"13-11, 4-6, 6-2, 9-7",4,0
+1955,Tony Trabert,Kurt Nielsen,"6-3, 7-5, 6-1",3,0
+1956,Lew Hoad,Ken Rosewall,"6-2, 4-6, 7-5, 6-4",4,0
+1957,Lew Hoad,Ashley Cooper,"6-2, 6-1, 6-2",3,0
+1958,Ashley Cooper,Neale Fraser,"3-6, 6-3, 6-4, 13-11",4,0
+1959,Alex Olmedo,Rod Laver,"6-4, 6-3, 6-4",3,0
+1960,Neale Fraser,Rod Laver,"6-4, 3-6, 9-7, 7-5",4,0
+1961,Rod Laver,Chuck McKinley,"6-3, 6-1, 6-4",3,0
+1962,Rod Laver,Martin Mulligan,"6-2, 6-2, 6-1",3,0
+1963,Chuck McKinley,Fred Stolle,"9-7, 6-1, 6-4",3,0
+1964,Roy Emerson,Fred Stolle,"6-4, 12-10, 4-6, 6-3",4,0
+1965,Roy Emerson,Fred Stolle,"6-2, 6-4, 6-4",3,0
+1966,Manuel Santana,Dennis Ralston,"6-4, 11-9, 6-4",3,0
+1967,John Newcombe,Wilhelm Bungert,"6-3, 6-1, 6-1",3,0
+1968,Rod Laver,Tony Roche,"6-3, 6-4, 6-2",3,0
+1969,Rod Laver,John Newcombe,"6-4, 5-7, 6-4, 6-4",4,0
+1970,John Newcombe,Ken Rosewall,"5-7, 6-3, 6-2, 3-6, 6-1",5,0
+1971,John Newcombe,Stan Smith,"6-3, 5-7, 2-6, 6-4, 6-4",5,0
+1972,Stan Smith,Ilie Năstase,"4-6, 6-3, 6-3, 4-6, 7-5",5,0
+1973,Jan Kodeš,Alex Metreveli,"6-1, 9-8(7-5), 6-3",3,1
+1974,Jimmy Connors,Ken Rosewall,"6-1, 6-1, 6-4",3,0
+1975,Arthur Ashe,Jimmy Connors,"6-1, 6-1, 5-7, 6-4",4,0
+1976,Björn Borg,Ilie Năstase,"6-4, 6-2, 9-7",3,0
+1977,Björn Borg,Jimmy Connors,"3-6, 6-2, 6-1, 5-7, 6-4",5,0
+1978,Björn Borg,Jimmy Connors,"6-2, 6-2, 6-3",3,0
+1979,Björn Borg,Roscoe Tanner,"6-7(4-7), 6-1, 3-6, 6-3, 6-4",5,1
+1980,Björn Borg,John McEnroe,"1-6, 7-5, 6-3, 6-7(16-18), 8-6",5,1
+1981,John McEnroe,Björn Borg,"4-6, 7-6(7-1), 7-6(7-4), 6-4",4,1
+1982,Jimmy Connors,John McEnroe,"3-6, 6-3, 6-7(2-7), 7-6(7-5), 6-4",5,1
+1983,John McEnroe,Chris Lewis,"6-2, 6-2, 6-2",3,0
+1984,John McEnroe,Jimmy Connors,"6-1, 6-1, 6-2",3,0
+1985,Boris Becker,Kevin Curren,"6-3, 6-7(4-7), 7-6(7-3), 6-4",4,1
+1986,Boris Becker,Ivan Lendl,"6-4, 6-3, 7-5",3,0
+1987,Pat Cash,Ivan Lendl,"7-6(7-5), 6-2, 7-5",3,1
+1988,Stefan Edberg,Boris Becker,"4-6, 7-6(7-2), 6-4, 6-2",4,1
+1989,Boris Becker,Stefan Edberg,"6-0, 7-6(7-1), 6-4",3,1
+1990,Stefan Edberg,Boris Becker,"6-2, 6-2, 3-6, 3-6, 6-4",5,0
+1991,Michael Stich,Boris Becker,"6-4, 7-6(7-4), 6-4",3,1
+1992,Andre Agassi,Goran Ivanišević,"6-7(8-10), 6-4, 6-4, 1-6, 6-4",5,1
+1993,Pete Sampras,Jim Courier,"7-6(7-3), 7-6(8-6), 3-6, 6-3",4,1
+1994,Pete Sampras,Goran Ivanišević,"7-6(7-2), 7-6(7-5), 6-0",3,1
+1995,Pete Sampras,Boris Becker,"6-7(5-7), 6-2, 6-4, 6-2",4,1
+1996,Richard Krajicek,MaliVai Washington,"6-3, 6-4, 6-3",3,0
+1997,Pete Sampras,Cédric Pioline,"6-4, 6-2, 6-4",3,0
+1998,Pete Sampras,Goran Ivanišević,"6-7(2-7), 7-6(11-9), 6-4, 3-6, 6-2",5,1
+1999,Pete Sampras,Andre Agassi,"6-3, 6-4, 7-5",3,0
+2000,Pete Sampras,Patrick Rafter,"6-7(10-12), 7-6(7-5), 6-4, 6-2",4,1
+2001,Goran Ivanišević,Patrick Rafter,"6-3, 3-6, 6-3, 2-6, 9-7",5,0
+2002,Lleyton Hewitt,David Nalbandian,"6-1, 6-3, 6-2",3,0
+2003,Roger Federer,Mark Philippoussis,"7-6(7-5), 6-2, 7-6(7-3)",3,1
+2004,Roger Federer,Andy Roddick,"4-6, 7-5, 7-6(7-3), 6-4",4,1
+2005,Roger Federer,Andy Roddick,"6-2, 7-6(7-2), 6-4",3,1
+2006,Roger Federer,Rafael Nadal,"6-0, 7-6(7-5), 6-7(2-7), 6-3",4,1
+2007,Roger Federer,Rafael Nadal,"7-6(9-7), 4-6, 7-6(7-3), 2-6, 6-2",5,1
+2008,Rafael Nadal,Roger Federer,"6-4, 6-4, 6-7(5-7), 6-7(8-10), 9-7",5,1
+2009,Roger Federer,Andy Roddick,"5-7, 7-6(8-6), 7-6(7-5), 3-6, 16-14",5,1
+2010,Rafael Nadal,Tomáš Berdych,"6-3, 7-5, 6-4",3,0
+2011,Novak Djokovic,Rafael Nadal,"6-4, 6-1, 1-6, 6-3",4,0
+2012,Roger Federer,Andy Murray,"4-6, 7-5, 6-3, 6-4",4,0
+2013,Andy Murray,Novak Djokovic,"6-4, 7-5, 6-4",3,0
+2014,Novak Djokovic,Roger Federer,"6-7(7-9), 6-4, 7-6(7-4), 5-7, 6-4",5,1
+2015,Novak Djokovic,Roger Federer,"7-6(7-1), 6-7(10-12), 6-4, 6-3",4,1
+2016,Andy Murray,Milos Raonic,"6-4, 7-6(7-3), 7-6(7-2)",3,1
+2017,Roger Federer,Marin Čilić,"6-3, 6-1, 6-4",3,0
+2018,Novak Djokovic,Kevin Anderson,"6-2, 6-2, 7-6(7-3)",3,1
+2019,Novak Djokovic,Roger Federer,"7-6(7-5), 1-6, 7-6(7-4), 4-6, 13-12(7-3)",5,1
+2021,Novak Djokovic,Matteo Berrettini,"6-7(4-7), 6-4, 6-4, 6-3",4,1
+2022,Novak Djokovic,Nick Kyrgios,"4-6, 6-3, 6-4, 7-6(7-3)",4,1
+2023,Carlos Alcaraz,Novak Djokovic,"1-6, 7-6(8-6), 6-1, 3-6, 6-4",5,1
+2024,Carlos Alcaraz,Novak Djokovic,"6-2, 6-2, 7-6(7-4)",3,1
