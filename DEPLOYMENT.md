@@ -42,6 +42,7 @@ git push -u origin main
    - **Name**: `wimbledon-api`
    - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `gunicorn --bind 0.0.0.0:$PORT app:app`
+   - **Python Version**: 3.11.9
    - **Instance Type**: Free
 6. Click "Create Web Service"
 7. Wait for deployment (takes 2-5 minutes)

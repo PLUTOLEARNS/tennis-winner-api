@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
+import csv
 import re
 
 url = "https://en.wikipedia.org/wiki/List_of_Wimbledon_gentlemen%27s_singles_champions"
@@ -95,17 +95,30 @@ for i, table in enumerate(tables):
         print(f"No valid data found in Table {i+1}")
 
 if all_data:
-    df_combined = pd.DataFrame(all_data, columns=["year", "champion", "runner_up", "score", "sets", "tiebreak"])
+    # Sort by year and remove duplicates
+    all_data.sort(key=lambda x: x[0])  # Sort by year (first column)
     
-    df_combined = df_combined.sort_values('year').drop_duplicates(subset=['year'], keep='first')
+    # Remove duplicates by year, keeping first occurrence
+    seen_years = set()
+    unique_data = []
+    for row in all_data:
+        year = row[0]
+        if year not in seen_years:
+            seen_years.add(year)
+            unique_data.append(row)
     
-    df_combined.to_csv('wimbledon_finals.csv', index=False)
+    # Save to CSV
+    with open('wimbledon_finals.csv', 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(["year", "champion", "runner_up", "score", "sets", "tiebreak"])
+        writer.writerows(unique_data)
     
     print(f"\nData scraped successfully!")
-    print(f"Total records: {len(df_combined)}")
-    print(f"Year range: {df_combined['year'].min()} - {df_combined['year'].max()}")
+    print(f"Total records: {len(unique_data)}")
+    print(f"Year range: {min(row[0] for row in unique_data)} - {max(row[0] for row in unique_data)}")
     print(f"First few records:")
-    print(df_combined.head())
+    for i, row in enumerate(unique_data[:5]):
+        print(f"  {row}")
     print(f"\nData saved to 'wimbledon_finals.csv'")
 else:
     print("No data was extracted. Please check the table structure.")
