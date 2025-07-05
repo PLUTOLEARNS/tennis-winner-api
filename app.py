@@ -13,6 +13,7 @@ from functools import wraps
 app = Flask(__name__)
 CORS(app)
 app.config['JSON_SORT_KEYS'] = False
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 # Load API key and credentials from environment variables
 API_KEY = os.getenv("API_KEY")
 user = os.getenv("USERNAME")
