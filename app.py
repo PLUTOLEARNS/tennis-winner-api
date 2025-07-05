@@ -10,7 +10,7 @@ from typing import Dict, Any, Optional
 
 app = Flask(__name__)
 CORS(app)
-
+app.config['JSON_SORT_KEYS'] = False
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -195,7 +195,7 @@ def get_player_finals(player_name):
             "total_finals": len(finals),
             "wins": sum(1 for f in finals if f['player_won']),
             "losses": sum(1 for f in finals if not f['player_won']),
-        }),200
+        }), 200
     except Exception as e:
         logger.error(f"Unexpected error in get_player_finals: {e}")
         return jsonify({
