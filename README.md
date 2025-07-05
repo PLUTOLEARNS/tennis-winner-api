@@ -200,10 +200,6 @@ This API is deployed on Render.com's free tier. For production use consideration
 3. Make your changes
 4. Submit a pull request
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## Contact
 
 For API access requests, questions, or support:
