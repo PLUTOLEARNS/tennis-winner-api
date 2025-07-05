@@ -6,15 +6,52 @@ import csv
 import os
 import subprocess
 import sys
+import base64
 from typing import Dict, Any, Optional
+from functools import wraps
 
 app = Flask(__name__)
 CORS(app)
 app.config['JSON_SORT_KEYS'] = False
+# Load API key and credentials from environment variables
+API_KEY = os.getenv("API_KEY")
+user = os.getenv("USERNAME")
+pwd = os.getenv("PASSWORD")
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
+def require_auth(f):
+    def decorated_function(*args, **kwargs):
+        # Check for API key in headers or query parameters
+        api_key = request.headers.get('X-API-Key') or request.args.get('api_key')
+        if api_key:
+            if api_key == API_KEY:
+                logger.info("Authentication successful via API key")
+                return f(*args, **kwargs)
+            else:
+                return jsonify({
+                    'error': 'Invalid API key',
+                    'message': 'The provided API key is invalid'
+                }), 403
+        # Check for Basic Auth
+        auth_header = request.headers.get('Authorization')
+        if auth_header and auth_header.startswith('Basic '):
+            try:
+                auth_value = auth_header.split(' ', 1)[1]
+                decoded_auth = base64.b64decode(auth_value).decode('utf-8')
+                username, password = decoded_auth.split(':', 1)
+                
+                if username == user and password == pwd:
+                    logger.info("Authentication successful via Basic Auth")
+                    return f(*args, **kwargs)  # Basic Auth valid
+                else:
+                    return jsonify({'error': 'Invalid credentials'}), 403
+            except Exception as e:
+                logger.error(f"Error decoding Basic Auth: {e}")
+                return jsonify({'error': 'Invalid auth format'}), 401
+        # No valid authentication found
+        return jsonify({'error': 'Authentication required'}), 401
+    return decorated_function
 def ensure_csv_exists():
     csv_file = 'wimbledon_finals.csv'
     extract_script = 'extract_data.py'
@@ -122,6 +159,7 @@ def health_check():
     }), 200
 
 @app.route('/wimbledon', methods=['GET'])
+@require_auth
 def get_wimbledon_final():
     try:
         # Get year from query parameters
@@ -163,6 +201,7 @@ def get_wimbledon_final():
             "message": "An unexpected error occurred while processing your request"
         }), 500
 @app.route('/wimbledon/player/<player_name>', methods=['GET'])
+@require_auth
 def get_player_finals(player_name):
     try:
         if not ensure_csv_exists():
