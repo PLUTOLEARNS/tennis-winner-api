@@ -21,6 +21,7 @@ pwd = os.getenv("PASSWORD")
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 def require_auth(f):
+    @wraps(f)
     def decorated_function(*args, **kwargs):
         # Check for API key in headers or query parameters
         api_key = request.headers.get('X-API-Key') or request.args.get('api_key')
