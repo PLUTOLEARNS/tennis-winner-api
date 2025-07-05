@@ -195,7 +195,6 @@ def get_player_finals(player_name):
             "total_finals": len(finals),
             "wins": sum(1 for f in finals if f['player_won']),
             "losses": sum(1 for f in finals if not f['player_won']),
-            "finals": finals
         }),200
     except Exception as e:
         logger.error(f"Unexpected error in get_player_finals: {e}")
