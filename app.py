@@ -109,8 +109,6 @@ def validate_year(year_str: str) -> Optional[int]:
     except (ValueError, TypeError):
         return None
 
-
-
 def format_score(score: str) -> str:
     # Normalize all dash characters to regular hyphens for better JSON readability
     return score.replace('–', '-').replace('—', '-').replace('â€"', '-')
@@ -128,13 +126,11 @@ def get_wimbledon_final():
     try:
         # Get year from query parameters
         year_param = request.args.get('year')
-        
         if not year_param:
             return jsonify({
                 "error": "Missing required parameter 'year'",
                 "message": "Please provide a year parameter (e.g., ?year=2021)"
             }), 400
-        
         # Validate year
         year = validate_year(year_param)
         if year is None:
@@ -142,16 +138,13 @@ def get_wimbledon_final():
                 "error": "Invalid year parameter",
                 "message": "Year must be a valid integer between 1877 and 2024"
             }), 400
-        
         # Load data for the specific year
         final_data = load_year_data(year)
-        
         if final_data is None:
             return jsonify({
                 "error": "Data not found",
                 "message": f"No Wimbledon final data available for year {year}. Please check if the data extraction was successful."
             }), 404
-        
         # Prepare response
         response_data = {
             "year": year,
@@ -161,7 +154,6 @@ def get_wimbledon_final():
             "sets": final_data["sets"],
             "tiebreak": final_data["tiebreak"]
         }
-        
         logger.info(f"Successfully retrieved data for year {year}")
         return jsonify(response_data), 200
     except Exception as e:
@@ -170,7 +162,48 @@ def get_wimbledon_final():
             "error": "Internal server error",
             "message": "An unexpected error occurred while processing your request"
         }), 500
-
+@app.route('/wimbledon/player/<player_name>', methods=['GET'])
+def get_player_finals(player_name):
+    try:
+        if not ensure_csv_exists():
+            return jsonify({"error": "Data not available",}), 500
+        player_name_lower = player_name.lower()
+        finals = []
+        with open('wimbledon_finals.csv', 'r', encoding='utf-8') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                champion = row['champion'].strip().lower()
+                runner_up = row['runner_up'].strip().lower()
+                if player_name_lower in (champion, runner_up):
+                    finals.append({
+                        "year": int(row['year']),
+                        "champion": row['champion'].strip(),
+                        "runner_up": row['runner_up'].strip(),
+                        "score": format_score(row['score']),
+                        "sets": int(row['sets']),
+                        "tiebreak": bool(int(row.get('tiebreak', '0'))),
+                        "player_won":player_name_lower == champion
+                    })
+        if not finals:
+            return jsonify({
+                "error": "No finals found",
+                "message": f"No Wimbledon finals found for player '{player_name}'"
+            }), 404
+        finals.sort(key=lambda x: x['year'], reverse=True)
+        return jsonify({
+            "player_search": player_name,
+            "total_finals": len(finals),
+            "wins": sum(1 for f in finals if f['player_won']),
+            "losses": sum(1 for f in finals if not f['player_won']),
+            "finals": finals
+        }),200
+    except Exception as e:
+        logger.error(f"Unexpected error in get_player_finals: {e}")
+        return jsonify({
+            "error": "Internal server error",
+            "message": "An unexpected error occurred while processing your request"
+        }), 500
+    
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
